@@ -23,12 +23,12 @@ class ChallengeOne extends Component {
     const value = Number(this.state.input);
     var i ;
     for (i=1; i <= value; i++) {
-      if(i%3===0){
+      if(i%3===0 && i%5!==0){
         console.log("SKIM")
       }else
-      if(i%5===0){
+      if(i%5===0 && i%3!==0){
         console.log("is a great place to work!!")
-      }else if(i%15===0){
+      }else if(i%3===0 && i%5===0){
         console.log("SKIM is a great place to work")
       }else
       console.log(i)
