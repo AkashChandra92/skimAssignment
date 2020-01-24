@@ -9,7 +9,7 @@ function App() {
       <header className = "App-header">
      
      <Typography component="h1" variant="h3" color="t000000" align="top">
-     Welcome to the challenges for Skim!
+     Welcome to the challenges for SKIM!
     </Typography>
      <br></br>
      <ChallengeOne/>

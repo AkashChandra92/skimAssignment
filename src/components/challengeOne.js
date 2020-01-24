@@ -10,13 +10,16 @@ class ChallengeOne extends Component {
     output: null
   };
 
+  // handleChange is going to change the value of the state depending on the input from the user
   handleChange = event => {
     this.setState({
       input: event.target.value
     });
   };
 
+  // the function factorial is going to check if the number is an integer between 1 and 18 and then calculate the factorial
   factorial() {
+    // value is the number given by the user. The conversion is done to change the data type from string to number.
     const value = Number(this.state.input);
     if (value >= 1 && value <= 18 && Number.isInteger(value)) {
       var i,
@@ -28,11 +31,11 @@ class ChallengeOne extends Component {
           output: fact
         });
       }
-      console.log(`The factorial is: ${this.state.output}`)
     } else 
     console.log("Please enter an integer between 1 and 18");
   }
 
+  // handleSubmit is called when the user clicks on submit.
   handleSubmit = event => {
     event.preventDefault();
     this.factorial();
