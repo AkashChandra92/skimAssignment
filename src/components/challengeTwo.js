@@ -11,21 +11,26 @@ class ChallengeOne extends Component {
   };
 
   handleChange = event => {
-    const value = Number(event.target.value)
-    if (
-      event.target.value >= 1 &&
-      event.target.value <= 18 &&
-      Number.isInteger(value)
-    )   
-    {
-      this.setState({
-        input: event.target.value
-      });
-    } else 
-    console.log("Please enter an integer between 1 and 18")
+
+    this.setState({
+      input : event.target.value
+    })
+    // const value = Number(event.target.value)
+    // if (
+    //   event.target.value >= 1 &&
+    //   event.target.value <= 18 &&
+    //   Number.isInteger(value)
+    // )   
+    // {
+      // this.setState({
+      //   input: event.target.value
+      // });
+    //   console.log("The number is qualified for operations")
+    // } else 
+    // console.log("Please enter an integer between 1 and 18")
   };
 
-  factorial = () => {
+  factorial ()  {
     console.log("yooooo")
     var i,
       fact = 1;
@@ -39,8 +44,9 @@ class ChallengeOne extends Component {
   };
 
   handleSubmit = event => {
+    console.log(`the state input is :" ${this.state.input}`)
     event.preventDefault();
-    this.factorial();
+    // this.factorial();
   };
 
   render() {
