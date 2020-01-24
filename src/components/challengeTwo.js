@@ -21,25 +21,24 @@ class ChallengeOne extends Component {
   messages() {
     // value is the number given by the user. The conversion is done to change the data type from string to number.
     const value = Number(this.state.input);
-    var i= 1
-    for(i; i<=value; i++){
-      if(i/3=== 0){
+    var i ;
+    for (i=1; i <= value; i++) {
+      if(i%3===0){
         console.log("SKIM")
       }else
-      if(i/5===0){
+      if(i%5===0){
         console.log("is a great place to work!!")
+      }else if(i%15===0){
+        console.log("SKIM is a great place to work")
       }else
-      if(i/15===0){
-        console.log("SKIM is a great place to work!!")
-      }else
-      console.log(value)
+      console.log(i)
     }
   }
 
   // handleSubmit is called when the user clicks on submit.
   handleSubmit = event => {
     event.preventDefault();
-    this.messages()
+    this.messages();
   };
   render() {
     return (
