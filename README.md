@@ -22,6 +22,9 @@ far as possible and beat the high score.
 
 Enjoy!
 
+### Click on the link below to check the app in action on a browser
+   https://zealous-ride-43aa26.netlify.com
+
 ## Screen Capture
 
 ![](https://media.giphy.com/media/kdEkqN8T6CTiezE8nI/giphy.gif)
