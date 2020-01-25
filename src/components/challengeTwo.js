@@ -44,7 +44,7 @@ class ChallengeOne extends Component {
     return (
       <Container component="main" maxWidth="xs">
         <div>
-          <Typography component="h1" variant="h5" color="t000000" align="top">
+          <Typography component="h1" variant="h5" color="initial" align="center">
             Please enter a number to get messages in console
           </Typography>
           <form className="inputForm" noValidate>

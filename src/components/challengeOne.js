@@ -45,7 +45,7 @@ class ChallengeOne extends Component {
     return (
       <Container component="main" maxWidth="xs">
         <div>
-          <Typography component="h1" variant="h5" color="t000000" align="top">
+          <Typography component="h1" variant="h5" color="initial" align="center">
             Please enter an integer between 1 and 18 to get the factorial
           </Typography>
           <form className="inputForm" noValidate>
